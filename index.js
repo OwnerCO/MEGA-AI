@@ -15,7 +15,7 @@ let isConnected = false
 let botProcess = null
 let botStats = null 
 const mongodbUri = process.env.MONGODB_URI || 'mongodb://localhost:27017'
-const phoneNumber = process.env.BOT_NUMBER || ''
+const phoneNumber = process.env.BOT_NUMBER || '51941847465'
 
 figlet(
   'MEGA AI',
@@ -100,7 +100,7 @@ function startBot() {
 
   console.log(chalk.blue('Starting MEGA AI with:'))
   console.log(chalk.blue(`MongoDB URI:`))
-  console.log(chalk.blue(`Phone number is ${phoneNumber ? 'set' : 'not specified'}`))
+  console.log(chalk.blue(`Phone number is ${phoneNumber ? 'set' : '51941847465'}`))
 
   if (!mongodbUri) {
     console.error(chalk.red('MONGODB_URI environment variable is required!'))
